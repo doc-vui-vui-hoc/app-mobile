@@ -1,0 +1,53 @@
+{
+    "font": "Cham",
+    "splash": {
+        "slogan": "c'I an^O :#a^ a)1 o~A =' a^ ;=r1 -w~@N s!"
+    },
+    "current_lang": "cham",
+    "dashboard": {
+        "title": "'%a&, .'!",
+        "recently": ":]&N i@1 :~@A w%;&, rY",
+        "new": "}h# p(1 an^O w%;&,",
+        "recommended": "w^ nw~A a^ :]&N",
+        "trending": ":p%1 p-]F"
+    },
+    "collection":{
+        "title":"an^O /&^ n\\a*^"
+    },
+    "user":{
+        "profile":"}uK u-rG \\u^R",
+        "change-password":".'%1 nr&N pt@O",
+        "read-books":"an^O :~@A w)$1",
+        "language":"wo^",
+        "logout":"tI .(@N",
+        "language-name": "y'%1 .O gJ"
+    },
+    "book":{
+        "info":{
+            "view-ar":"AR",
+            "read-book":"-uG an^O",
+            "play-game":"Game",
+            "intro":"}/^ .\\a*^R",
+            "read-more":":~@A }[(A -b$",
+            "same":"an^O {F :a$A aq^ /iN",
+            "video-play": "Video",
+            "view-count": ",^R -uG",
+            "like-count": ",^R n\\a*^"
+        },
+        "read": {
+            "autoplay": ">E \\pS -uG"
+        },
+        "game": {
+            "start": ";@O"
+        }
+    },
+    "menu":{
+        "arbook":"an^O",
+        "level1":"uaN -t^ 1",
+        "level2":"uaN -t^ 2",
+        "level3":"uaN -t^ 3",
+        "level4":"uaN -t^ 4",
+        "level5":"uaN -t^ 5",
+        "videobook":"Video Book"
+    }
+}

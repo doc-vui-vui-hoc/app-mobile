@@ -1,0 +1,54 @@
+{
+    "font": "Nunito",
+    "splash": {
+        "slogan": "បណ្ណាល័យឌីជីថលឥតគិតថ្លៃសម្រាប់កុមារវៀតណាម"
+    },
+    "current_lang": "khmer",
+    "dashboard": {
+        "title": "សួស្តី",
+        "recently": "អ្នកបានមើលថ្មីៗនេះ",
+        "new": "ស្វែងរកសៀវភៅថ្មីៗ",
+        "recommended": "សូមណែនាំសម្រាប់អ្នក",
+        "trending": "និន្នាការ"
+    },
+    "collection":{
+        "title":"សៀវភៅដែលចូលចិត្ត"
+    },
+    "user":{
+        "profile":"ព័ត៌មានផ្ទាល់ខ្លួន",
+        "change-password":"ផ្លាស់ប្តូរពាក្យសម្ងាត់",
+        "read-books":"សៀវភៅដែលបានមើល",
+        "language":"ភាសា",
+        "logout":"ចាកចេញ",
+        "language-name": "ភាសាខ្មែរ"
+
+    },
+    "book":{
+        "info":{
+            "view-ar":"AR",
+            "read-book":"អានសៀវភៅ",
+            "play-game":"Game",
+            "intro":"ឧទ្ទេសនាម",
+            "read-more":"មើលព័ត៌មានបន្ថែម",
+            "same":"សៀវភៅដែលមានប្រធានបទដូចគ្នា",
+            "video-play": "Video",
+            "view-count": "លើកនាក់អាន",
+            "like-count": "លើកនាក់ចូលចិត្ត"
+        },
+        "read": {
+            "autoplay": "Tự động"
+        },
+        "game": {
+            "start": "ចាប់ផ្ដើម"
+        }
+    },
+    "menu":{
+        "arbook":"សៀវភៅ AR",
+        "level1":"កម្រិត 1",
+        "level2":"កម្រិត 2",
+        "level3":"កម្រិត 3",
+        "level4":"កម្រិត 4",
+        "level5":"កម្រិត 5",
+        "videobook":"Video Book"
+    }
+}

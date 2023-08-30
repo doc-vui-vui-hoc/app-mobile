@@ -1,0 +1,53 @@
+{
+    "font": "TayNguyen",
+    "splash": {
+        "slogan": "Hơnih wei ‘ma\\n kơxô| ’ma\\n a\\n đe\\ch kơ đe hơioh Viêt Nam"
+    },
+    "current_lang": "bahnar",
+    "dashboard": {
+        "title": "Hơp^nh hmach",
+        "recently": "Bôl sang na\\ng ‘nao âu sơ\\",
+        "new": "Chơcha\\ hla bar ‘nao",
+        "recommended": "Hơp^nh pơra\\ a\\n kơ bôl",
+        "trending": "Kiơ\\ trong tơ‘bôh"
+    },
+    "collection":{
+        "title":"Hla bar sang lu\\"
+    },
+    "user":{
+        "profile":"Thông tin po tơ’ngla",
+        "change-password":"Tơđôih mật khẩu",
+        "read-books":"Hla bar sang nă\\ng",
+        "language":"Nâr",
+        "logout":"Đa\\ng xuất",
+        "language-name": "Nâr Bahnar"
+    },
+    "book":{
+        "info":{
+            "view-ar":"AR",
+            "read-book":"Pơre hla bar",
+            "play-game":"Chơi game",
+            "intro":"Tơ‘bôh",
+            "read-more":"Na\\ng hơtha\\m",
+            "same":"Hla bar chủ đề lơlai\\",
+            "video-play": "Video",
+            "view-count": "Wơ\\t pơre",
+            "like-count": "Wơ\\t lu\\"
+        },
+        "read": {
+            "autoplay": "Pơre kơdih"
+        },
+        "game": {
+            "start": "Pơtơm"
+        }
+    },
+    "menu":{
+        "arbook":"Hla bar AR",
+        "level1":"Ta\\l 1",
+        "level2":"Ta\\l 2",
+        "level3":"Ta\\l 3",
+        "level4":"Ta\\l 4",
+        "level5":"Ta\\l 5",
+        "videobook":"Video Book"
+    }
+}

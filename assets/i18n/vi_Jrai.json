@@ -1,0 +1,53 @@
+{
+    "font": "TayNguyen",
+    "splash": {
+        "slogan": "Sang jưh hră lui mă prăk piôh kơ ]ơđai Viêt Nam"
+    },
+    "current_lang": "jrai",
+    "dashboard": {
+        "title": "Kơkuh",
+        "recently": "Ih hmâo dlăng giam anai",
+        "new": "Hyu hơduah hơdrôm hră brâo",
+        "recommended": "Lăi brơi kơ ih",
+        "trending": "Pơ-anap nao"
+    },
+    "collection":{
+        "title":"Hră amuaih laih"
+    },
+    "user":{
+        "profile":"Tơlơi hing ta pô",
+        "change-password":"Pơplih ano# pơdop",
+        "read-books":"Hră hmâo đok laih",
+        "language":"Tơlơi pơhiăp",
+        "logout":"Pơđuăi h^",
+        "language-name": "Tơlơi Jrai"
+    },
+    "book":{
+        "info":{
+            "view-ar":"Xem AR",
+            "read-book":"Đok hră",
+            "play-game":"Game",
+            "intro":"Lăi pơthâo",
+            "read-more":"Dlăng thin tơlơi hing",
+            "same":"Hơdrôm hră hrom bôh tơlơi",
+            "video-play": "Video",
+            "view-count": "Hnư đok",
+            "like-count": "Hnư amuaih"
+        },
+        "read": {
+            "autoplay": "Đok mă pô"
+        },
+        "game": {
+            "start": "]a#o"
+        }
+    },
+    "menu":{
+        "arbook":"Hơdrôm hră AR",
+        "level1":"Gưl 1",
+        "level2":"Gưl 2",
+        "level3":"Gưl 3",
+        "level4":"Gưl 4",
+        "level5":"Gưl 5",
+        "videobook":"Video Book"
+    }
+}

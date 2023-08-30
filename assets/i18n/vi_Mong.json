@@ -1,0 +1,53 @@
+{
+    "font": "Nunito",
+    "splash": {
+        "slogan": "Cxangz ntơưr khơưk đơưz tru nhik nhuôs Viêx Nangk"
+    },
+    "current_lang": "mong",
+    "dashboard": {
+        "title": "Nhaoz jông",
+        "recently": "Fôngx zưl kreir seiz buôk nor",
+        "new": "Yuôx nrar ntơưr yaz",
+        "recommended": "Krêz puz fôngx zưl",
+        "trending": "Qơư môngl"
+    },
+    "collection":{
+        "title":"Ntơưr tưz nhav"
+    },
+    "user":{
+        "profile":"Pênhr sênhz li thôngz mông ",
+        "change-password":"Pâur bê pêv mix",
+        "read-books":"Ntơưr tưz seiz",
+        "language":"Lul heik",
+        "logout":"Tơưv lul",
+        "language-name": "Lul Hmôngz"
+    },
+    "book":{
+        "info":{
+            "view-ar":"AR",
+            "read-book":"Nhênhv ntơưr",
+            "play-game":"Game",
+            "intro":"Heik kra",
+            "read-more":"Seiz thaz thôngz mông",
+            "same":"Ntơưr đrus tsưr tênhr",
+            "video-play": "Video",
+            "view-count": "Jal nhênhv",
+            "like-count": "Jal nhav"
+        },
+        "read": {
+            "autoplay": "Chiv chir nhênhv"
+        },
+        "game": {
+            "start": "Qir têl"
+        }
+    },
+    "menu":{
+        "arbook":"Ntơưr AR",
+        "level1":"Kêz tưv 1",
+        "level2":"Kêz tưv 2",
+        "level3":"Kêz tưv 3",
+        "level4":"Kêz tưv 4",
+        "level5":"Kêz tưv 5",
+        "videobook":"Video Book"
+    }
+}

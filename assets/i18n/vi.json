@@ -1,0 +1,57 @@
+{
+    "font": "Nunito",
+    "splash": {
+        "slogan": "Thư viện số miễn phí cho trẻ em Việt Nam"
+    },
+    "current_lang": "vi",
+    "dashboard": {
+        "title": "Xin chào",
+        "recently": "Bạn đã xem gần đây",
+        "new": "Khám phá sách mới",
+        "recommended": "Đề xuất cho bạn",
+        "trending": "Xu hướng"
+    },
+    "collection":{
+        "title":"Sách bạn đã thích"
+    },
+    "user":{
+        "profile":"Thông tin cá nhân",
+        "change-password":"Đổi mật khẩu",
+        "read-books":"Sách đã xem",
+        "language":"Ngôn ngữ",
+        "logout":"Đăng xuất",
+        "language-name": "Tiếng Việt"
+    },
+    "book":{
+        "info":{
+            "view-ar":"Xem AR",
+            "read-book":"Đọc sách",
+            "play-game":"Chơi game",
+            "intro":"Giới thiệu",
+            "read-more":"Xem thêm",
+            "same":"Sách cùng chủ đề",
+            "video-play": "Video",
+            "view-count": "Lượt đọc",
+            "like-count": "Lượt thích"
+        },
+        "read": {
+            "autoplay": "Tự động"
+        },
+        "game": {
+            "start": "Bắt đầu"
+        }
+    },
+    "menu":{
+        "arbook":"Sách AR",
+        "level1":"Cấp độ 1",
+        "level2":"Cấp độ 2",
+        "level3":"Cấp độ 3",
+        "level4":"Cấp độ 4",
+        "level5":"Cấp độ 5",
+        "videobook":"Video Book"
+    },
+    "home": "Trang chủ",
+    "security" : "Chính sách bảo mật",
+    "termsOfuse": "Điều khoản sử dụng",
+    "bookdownload": "Sách đã tải"
+}

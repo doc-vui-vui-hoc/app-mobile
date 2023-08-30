@@ -1,0 +1,53 @@
+{
+    "font": "TayNguyen",
+    "splash": {
+        "slogan": "Anôk dlăng hră mang pioh kơ phung hđeh\nđiêt Việt Nam\n"
+    },
+    "current_lang": "ede",
+    "dashboard": {
+        "title": "Alum kkuh",
+        "recently": "Pô tuôm dlăng leh mrâo anei",
+        "new": "{^ng găp dlăng mrâo anei",
+        "recommended": "Akâo brei kơ [^ng găp",
+        "trending": "Hdră amra anăp"
+    },
+    "collection":{
+        "title":"Hdruôm hră pô khăp"
+    },
+    "user":{
+        "profile":"Hưn mdah kơ asei mlei pô",
+        "change-password":"Mlih ]ih mu\\t",
+        "read-books":"Hdruôm hră tuôm dlăng leh",
+        "language":"Klei blu",
+        "logout":"Kđăl pioh",
+        "language-name": "Klei Êđê"
+    },
+    "book":{
+        "info":{
+            "view-ar":"AR",
+            "read-book":"Dlăng hdruôm hră",
+            "play-game":"Game",
+            "intro":"Hưn mdah",
+            "read-more":"Dlăng klei",
+            "same":"Hdruôm hră sa boh phu\\n",
+            "video-play": "Video",
+            "view-count": "Ênoh mnuih dlăng",
+            "like-count": "Ênoh mnuih khăp dlăng"
+        },
+        "read": {
+            "autoplay": "}o\\ng dlăng mă"
+        },
+        "game": {
+            "start": "Mphu\\n k]ưm"
+        }
+    },
+    "menu":{
+        "arbook":"Hdruôm hră AR",
+        "level1":"Gưl hnơ\\ng 1",
+        "level2":"Gưl hnơ\\ng 2",
+        "level3":"Gưl hnơ\\ng 3",
+        "level4":"Gưl hnơ\\ng 4",
+        "level5":"Gưl hnơ\\ng 5",
+        "videobook":"Video Book"
+    }
+}

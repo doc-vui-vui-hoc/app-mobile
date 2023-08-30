@@ -1,0 +1,53 @@
+{
+    "font": "TayNguyen",
+    "splash": {
+        "slogan": "Ngih săm bu\\t mrô ndra\\p a\\n ma phung kon\nse Việt Nam"
+    },
+    "current_lang": "mnong",
+    "dashboard": {
+        "title": "Dăn mbah",
+        "recently": "Ba\\l le\\ua\\nh êp aơ",
+        "new": "Joi saơ săm bu\\t m’he",
+        "recommended": "Joi nau ngơi a\\n ba\\l\n",
+        "trending": "Ntil ma te\\ng"
+    },
+    "collection":{
+        "title":"Săm bu\\t u\\ch rong"
+    },
+    "user":{
+        "profile":"nau mi\\n êng",
+        "change-password":"Rgâl mật khẩu",
+        "read-books":"Săm bu\\t le\\ua\\nh\n",
+        "language":"nau rplay ngơi",
+        "logout":"Chah lơi",
+        "language-name": "Nau Mnong"
+    },
+    "book":{
+        "info":{
+            "view-ar":"AR",
+            "read-book":"Ra\\k săm bu\\t",
+            "play-game":"Game",
+            "intro":"Mbơh nkoch",
+            "read-more":"Ua\\nh tai nau mi\\n êng",
+            "same":"Săm bu\\t nsum nau ntơm",
+            "video-play": "Video",
+            "view-count": "Tơ\\ra\\k",
+            "like-count": "Tơ\\u\\ch"
+        },
+        "read": {
+            "autoplay": "Ntơm ra\\k êng\n"
+        },
+        "game": {
+            "start": "ntơm bôk"
+        }
+    },
+    "menu":{
+        "arbook":"Săm bu\\t AR",
+        "level1":"Nau ngăch 1",
+        "level2":"Nau ngăch 2",
+        "level3":"Nau ngăch 3",
+        "level4":"Nau ngăch 4",
+        "level5":"Nau ngăch 5",
+        "videobook":"Video Book"
+    }
+}

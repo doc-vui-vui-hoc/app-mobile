@@ -1,0 +1,53 @@
+{
+  "font": "Thai",
+  "splash": {
+    "slogan": "h*oG M*IN Ux xaN, CVaM <T, joM yV* PUG #d&c N*oJ VId naM Ab&G eL Eb&a #md AGN\n"
+  },
+  "current_lang": "thai",
+  "dashboard": {
+    "title": "x T}c SaV",
+    "recently": "x&iG uC& h&iG EP eL/Ab&G",
+    "new": "x&aV uH* P{b Ux Ym",
+    "recommended": "boc Yh* x&iG uC",
+    "trending": "EM n*a/ l}G"
+  },
+  "collection":{
+    "title":"P{b Ux Es*a M}c/n}d ExG"
+  },
+  "user":{
+    "profile":"EV*a Ma TaG {L [M& Es*a",
+    "change-password":"p&IN L>G yk TaG yV* Ek*a",
+    "read-books":"eL/ Ab&G eL*V",
+    "language":"CVaM/ CVaM pac",
+    "logout":"ooc k&oJ Ix h*oG iN",
+    "language-name": "CVaM yT"
+  },
+  "book":{
+    "info":{
+      "view-ar":"AR",
+      "read-book":"o&aN Ux xaN/ <L&N Ux xaN",
+      "play-game":"Game",
+      "intro":"naJ ux",
+      "read-more":"x&aV eL t&U",
+      "same":"P{b Ux iM CVaM <t epc c$",
+      "video-play": "Video",
+      "view-count": "o&aN ic* ET",
+      "like-count": "c* ET& M} c /n }d"
+    },
+    "read": {
+      "autoplay": "<L&N Yh* F}"
+    },
+    "game":{
+      "start": "K*$ KaG"
+    }
+  },
+  "menu":{
+    "arbook":"P{b U",
+    "level1":"w*aN xuG V&a {t& 1",
+    "level2":"w*aN xuG V&a {t& 2",
+    "level3":"w*aN xuG V&a {t& 3",
+    "level4":"w*aN xuG V&a {t& 4",
+    "level5":"w*aN xuG V&a {t& 5",
+    "videobook":"Video Book"
+  }
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="6" height="24" viewBox="0 0 6 24">
+  <g id="more" transform="translate(0)">
+    <g id="Group_74" data-name="Group 74" transform="translate(0 0)">
+      <g id="Group_73" data-name="Group 73" transform="translate(0)">
+        <circle id="Ellipse_2" data-name="Ellipse 2" cx="3" cy="3" r="3" transform="translate(0)" fill="#707070"/>
+        <circle id="Ellipse_3" data-name="Ellipse 3" cx="3" cy="3" r="3" transform="translate(0 9)" fill="#707070"/>
+        <circle id="Ellipse_4" data-name="Ellipse 4" cx="3" cy="3" r="3" transform="translate(0 18)" fill="#707070"/>
+      </g>
+    </g>
+  </g>
+</svg>
