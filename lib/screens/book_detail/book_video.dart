@@ -17,6 +17,7 @@ class CustomVideoPlayder extends StatefulWidget {
 }
 
 class _CustomVideoPlayderState extends State<CustomVideoPlayder> {
+  
   TargetPlatform? _platform;
   late VideoPlayerController _videoPlayerController1;
   ChewieController? _chewieController;

@@ -6,6 +6,8 @@ import 'package:ar_book/models/arbook.dart';
 import 'package:ar_book/screens/home_screen/home_state.dart';
 import 'package:ar_book/services/api_provider.dart';
 import 'package:ar_book/services/api_service.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_i18n/flutter_i18n.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class HomeStateNotifier extends StateNotifier<HomeState> {
@@ -90,10 +92,13 @@ class HomeStateNotifier extends StateNotifier<HomeState> {
     }
   }
 
-  Future<void> getListbookDownLoad() async {
+  Future<void> getListbookDownLoad(BuildContext context) async {
     List<ArBook> ls = [];
+    final language = FlutterI18n.translate(context, 'current_lang');
+    String keyDownload = LocalStorageName.downloadFileBook;
+        final book =  LocalStoreManager.getStringList('$keyDownload/$language');
     final download =
-        LocalStoreManager.getStringList(LocalStorageName.downloadFileBook);
+        LocalStoreManager.getStringList('$keyDownload/$language');
     if (download != null) {
       for (var item in download) {
         var data = jsonDecode(item);

@@ -56,5 +56,9 @@
     "home": "Home",
     "security" : "Privacy Policy",
     "termsOfuse": "Terms of use",
-    "bookdownload": "Downloaded books"
+    "bookdownload": "Downloaded books",
+    "chu_bien":"Ed: ",
+    "noi_dung":"Author: ",
+    "minh_hoa":"Illustration: ",
+    "nha_xuat_ban":"Publishing company: "
 }

@@ -36,11 +36,18 @@ class BookReadingState extends ConsumerState<BookReading> {
   List<Lang> lang = LocalData.languages;
 
   List pages = [];
-
-  String currentLang = 'vi';
+  String currentLang = '';
   String currentFont = '';
   bool maxPage = false;
   bool autoplay = false;
+
+    void checkCurrentLang() async {
+    final SharedPreferences prefs = await _prefs;
+    final String? currentLangCode = prefs.getString('lang');
+    setState(() {
+    currentLang = currentLangCode!;
+    });
+  }
 
   @override
   void initState() {
@@ -48,6 +55,7 @@ class BookReadingState extends ConsumerState<BookReading> {
     _pageController.addListener(() {
       _pageStreamController.add(_pageController.page!.toInt());
     });
+    checkCurrentLang();
     initLanguage();
     setState(() {
       pages = widget.book.data["pages"];
@@ -135,6 +143,7 @@ class BookReadingState extends ConsumerState<BookReading> {
                             baseUrlAR + pages[itemIndex]["image"][0]["url"],
                         title: pages[itemIndex]["sub_title"][currentLang],
                         audioUrl: urlAudio(itemIndex),
+                        fontStyle: currentFont,
                       );
                     },
                   ),

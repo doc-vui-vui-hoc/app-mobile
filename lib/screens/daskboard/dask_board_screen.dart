@@ -1,4 +1,3 @@
-import 'package:ar_book/common/check_internet/connectivity_status_notifier.dart';
 import 'package:ar_book/common/custom_bottom_bar/custom_bottom_bar.dart';
 import 'package:ar_book/screens/book_dowload/list_book_download.dart';
 import 'package:ar_book/screens/home_screen/home_screen.dart';
@@ -27,7 +26,7 @@ class _DaskBoardScreenState extends ConsumerState<DaskBoardScreen> {
         ..getListbookRecommend()
         ..getListbookTrend()
         ..getListAllSearch()
-        ..getListbookDownLoad();
+        ..getListbookDownLoad(context);
     });
   }
 

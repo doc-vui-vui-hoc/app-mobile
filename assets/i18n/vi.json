@@ -53,5 +53,9 @@
     "home": "Trang chủ",
     "security" : "Chính sách bảo mật",
     "termsOfuse": "Điều khoản sử dụng",
-    "bookdownload": "Sách đã tải"
+    "bookdownload": "Sách đã tải",
+    "chu_bien":"Chủ biên: ",
+    "noi_dung":"Tác giả: ",
+    "minh_hoa":"Minh hoạ: ",
+    "nha_xuat_ban":"Nhà xuất bản: "
 }

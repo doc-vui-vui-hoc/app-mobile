@@ -1,4 +1,4 @@
-package net.vietnaminfo.arbook
+package net.vietnaminfo.arbook.app
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -9,11 +9,14 @@ class ItemPlayerDetailDownload extends StatefulWidget {
   final String imageUrl;
   final String title;
   final String audioUrl;
+  final String fontStyle;
   const ItemPlayerDetailDownload(
       {Key? key,
       required this.imageUrl,
       required this.title,
-      required this.audioUrl})
+      required this.audioUrl,
+      required this.fontStyle,
+      })
       : super(key: key);
 
   @override
@@ -28,9 +31,8 @@ class _ItemPlayerDetailDownloadState extends State<ItemPlayerDetailDownload> {
   Widget build(BuildContext context) {
     playSong(widget.audioUrl, localFile: true);
     if(widget.title != null){
-      var sub = widget.title.trim();
       setState(() {
-        
+      var sub = widget.title.trim();
       });
     }else{
       var sub = "";
@@ -51,12 +53,20 @@ class _ItemPlayerDetailDownloadState extends State<ItemPlayerDetailDownload> {
           child: SingleChildScrollView(
             controller: ScrollController(keepScrollOffset: false),
             scrollDirection: Axis.vertical,
-            child: Html(
-              data: '<p>' + sub + "</p>",
+            child: widget.title != null 
+            ? Html(
+              data: widget.title,
               style: {
+                 "*": Style(
+                  textAlign: TextAlign.center,
+                  fontFamily: widget.fontStyle,
+                  fontSize: FontSize(16),
+                  color: const Color(0xFF006338),
+                  fontWeight: FontWeight.bold,
+                ),
                 "span": Style(
                   textAlign: TextAlign.center,
-                  fontFamily: 'Nunito',
+                  fontFamily: widget.fontStyle,
                   fontSize: FontSize(16),
                   color: const Color(0xFF006338),
                   fontWeight: FontWeight.bold,
@@ -68,7 +78,8 @@ class _ItemPlayerDetailDownloadState extends State<ItemPlayerDetailDownload> {
                   fontWeight: FontWeight.bold,
                 ),
               },
-            ),
+            )
+            : const SizedBox.shrink(),
           ),
         ),
       ),

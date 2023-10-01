@@ -48,11 +48,11 @@ android {
 
     defaultConfig {
         multiDexEnabled true
-        applicationId "net.vietnaminfo.arbook"
+        applicationId "net.vietnaminfo.arbook.app"
         minSdkVersion 21
         targetSdkVersion 33
-        versionCode 7
-        versionName "1.0.7"
+        versionCode 9
+        versionName "1.0.9"
     }
 
     signingConfigs {

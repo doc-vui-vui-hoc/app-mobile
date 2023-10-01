@@ -17,6 +17,7 @@ import 'package:flutter_switch/flutter_switch.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:path_provider/path_provider.dart' as path;
 
 class BookReadingDownload extends ConsumerStatefulWidget {
   final ArBook book;
@@ -40,10 +41,18 @@ class BookReadingDownloadState extends ConsumerState<BookReadingDownload> {
 
   List pages = [];
 
-  String currentLang = 'vi';
+  String currentLang = '';
   String currentFont = '';
   bool maxPage = false;
   bool autoplay = false;
+
+  void checkCurrentLang() async {
+    final SharedPreferences prefs = await _prefs;
+    final String? currentLangCode = prefs.getString('lang');
+    setState(() {
+    currentLang = currentLangCode!;
+    });
+  }
 
   @override
   void initState() {
@@ -51,6 +60,7 @@ class BookReadingDownloadState extends ConsumerState<BookReadingDownload> {
     _pageController.addListener(() {
       _pageStreamController.add(_pageController.page!.toInt());
     });
+    checkCurrentLang();
     initLanguage();
     setState(() {
       pages = widget.book.data["pages"];
@@ -59,12 +69,20 @@ class BookReadingDownloadState extends ConsumerState<BookReadingDownload> {
     nextPage();
   }
 
-  String path() {
+  String pathdata() {
     final local = LocalStoreManager.getString(LocalStorageName.path);
     if (local != null) {
+      print(local);
       return local;
     }
     return '';
+  }
+
+  Future<String> data() async{
+    final a = pathdata();
+    final group = await path.getApplicationSupportDirectory();
+    final local = a.replaceAll(widget.book.uuid, '').replaceAll(group.path, '');
+    return local;
   }
 
   void initLanguage() async {
@@ -96,7 +114,7 @@ class BookReadingDownloadState extends ConsumerState<BookReadingDownload> {
   }
 
   String urlAudio(int index) {
-    final localPath = path();
+    final localPath = pathdata();
     String playUrl;
     if (pages[index]["audio"][currentLang] != null) {
       playUrl = localPath +
@@ -119,7 +137,8 @@ class BookReadingDownloadState extends ConsumerState<BookReadingDownload> {
 
   @override
   Widget build(BuildContext context) {
-    final localPath = path();
+    final localPath = pathdata();
+    
     return Scaffold(
       body: OrientationBuilder(builder: (context, orientation) {
         return Container(
@@ -153,6 +172,7 @@ class BookReadingDownloadState extends ConsumerState<BookReadingDownload> {
                             pages[itemIndex]["image"]['url'],
                         title: pages[itemIndex]["sub_title"][currentLang],
                         audioUrl: urlAudio(itemIndex),
+                        fontStyle: currentFont
                       );
                     },
                   ),

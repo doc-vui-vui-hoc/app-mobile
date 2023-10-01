@@ -69,50 +69,50 @@ class _NavigationDrawerState extends ConsumerState<NavigationDrawer> {
             ),
 
             const SizedBox(height: 16),
-            Container(
-              color: CustomColors.white,
-              child: ListTile(
-                leading: Text(
-                  FlutterI18n.translate(context, 'termsOfuse'),
-                  style: TxtStyle.Noto18w600.copyWith(
-                    color: CustomColors.green006338,
-                  ),
-                ),
-                subtitle: null,
-                onTap: () {
-                  Navigator.pop(context);
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const TermsOfUseScreen(),
-                    ),
-                  );
-                },
-              ),
-            ),
-            const SizedBox(height: 16),
-            Container(
-              color: CustomColors.white,
-              child: ListTile(
-                leading: Text(
-                  FlutterI18n.translate(context, 'security'),
-                  style: TxtStyle.Noto18w600.copyWith(
-                    color: CustomColors.green006338,
-                  ),
-                ),
-                subtitle: null,
-                onTap: () {
-                  Navigator.pop(context);
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const SecurityScreen(),
-                    ),
-                  );
-                },
-              ),
-            ),
-            const SizedBox(height: 16),
+            // Container(
+            //   color: CustomColors.white,
+            //   child: ListTile(
+            //     leading: Text(
+            //       FlutterI18n.translate(context, 'termsOfuse'),
+            //       style: TxtStyle.Noto18w600.copyWith(
+            //         color: CustomColors.green006338,
+            //       ),
+            //     ),
+            //     subtitle: null,
+            //     onTap: () {
+            //       Navigator.pop(context);
+            //       Navigator.push(
+            //         context,
+            //         MaterialPageRoute(
+            //           builder: (context) => const TermsOfUseScreen(),
+            //         ),
+            //       );
+            //     },
+            //   ),
+            // ),
+            // const SizedBox(height: 16),
+            // Container(
+            //   color: CustomColors.white,
+            //   child: ListTile(
+            //     leading: Text(
+            //       FlutterI18n.translate(context, 'security'),
+            //       style: TxtStyle.Noto18w600.copyWith(
+            //         color: CustomColors.green006338,
+            //       ),
+            //     ),
+            //     subtitle: null,
+            //     onTap: () {
+            //       Navigator.pop(context);
+            //       Navigator.push(
+            //         context,
+            //         MaterialPageRoute(
+            //           builder: (context) => const SecurityScreen(),
+            //         ),
+            //       );
+            //     },
+            //   ),
+            // ),
+            // const SizedBox(height: 16),
             Container(
               color: CustomColors.white,
               child: ListTile(

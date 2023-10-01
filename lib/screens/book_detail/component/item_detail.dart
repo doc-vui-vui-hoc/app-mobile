@@ -9,22 +9,26 @@ class ItemPlayerDetail extends StatelessWidget {
   final String imageUrl;
   final String title;
   final String audioUrl;
+  final String fontStyle;
   const ItemPlayerDetail(
       {Key? key,
       required this.imageUrl,
       required this.title,
-      required this.audioUrl})
+      required this.audioUrl,
+      required this.fontStyle,
+      })
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     playSong(audioUrl);
-    var sub = title.trim();
     return Column(children: [
-       Images.imageAssets(
-        imageUrl,
-        fit: BoxFit.contain,
-      ),
+       Expanded(
+         child: Images.imageAssets(
+          imageUrl,
+          fit: BoxFit.contain,
+             ),
+       ),
      
       Expanded(
         flex: 1,
@@ -34,12 +38,21 @@ class ItemPlayerDetail extends StatelessWidget {
           child: SingleChildScrollView(
             controller: ScrollController(keepScrollOffset: false),
             scrollDirection: Axis.vertical,
-            child: a.Html(
-              data: '<p>' + sub + "</p>",
+            child:
+            title != null 
+            ? a.Html(
+              data: title,
               style: {
+                "*": a.Style(
+                  textAlign: TextAlign.center,
+                  fontFamily: fontStyle,
+                  fontSize: a.FontSize(16),
+                  color: const Color(0xFF006338),
+                  fontWeight: FontWeight.bold,
+                ),
                 "span": a.Style(
                   textAlign: TextAlign.center,
-                  fontFamily: 'Nunito',
+                  fontFamily: fontStyle,
                   fontSize: a.FontSize(16),
                   color: const Color(0xFF006338),
                   fontWeight: FontWeight.bold,
@@ -51,7 +64,8 @@ class ItemPlayerDetail extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               },
-            ),
+            )
+            : const SizedBox.shrink(),
           ),
         ),
       ),

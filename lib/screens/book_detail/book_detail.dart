@@ -312,15 +312,15 @@ class BookDetailScreenState extends State<BookDetailScreen>
       File fileJson = File('${directory.path}/data.json');
       fileJson.open();
       final value = fileJson.readAsStringSync();
-      final List<String> listbook = [];
-      final book =
-          LocalStoreManager.getStringList(LocalStorageName.downloadFileBook);
+      final List<String> listbook = []; 
+      String keyDownload = LocalStorageName.downloadFileBook;
+        final book =  LocalStoreManager.getStringList('$keyDownload/$language');
       for (int i = 0; i < book.length; i++) {
         listbook.add(book[i]);
       }
       listbook.add(value);
       LocalStoreManager.setStringList(
-          LocalStorageName.downloadFileBook, listbook);
+          '$keyDownload/$language', listbook);
 
       savePathResource(path: directory.path);
     } catch (error) {
@@ -450,11 +450,15 @@ class BookDetailScreenState extends State<BookDetailScreen>
                   const SizedBox(
                     height: 20,
                   ),
-                  Images.imageAssets(
-                    baseUrlAR + widget.book.data["image"][0]["url"],
-                    width: 135,
+                  Container(
+                     width: 135,
                     height: 180,
-                    fit: BoxFit.cover,
+                    child: Images.imageAssets(
+                      baseUrlAR + widget.book.data["image"][0]["url"],
+                      width: 135,
+                      height: 180,
+                      fit: BoxFit.cover,
+                    ),
                   ),
                   const SizedBox(
                     height: 20,
@@ -556,6 +560,88 @@ class BookDetailScreenState extends State<BookDetailScreen>
             const SizedBox(
               height: 10,
             ),
+            (widget.book.data['author'][FlutterI18n.translate(context, 'current_lang')] != null && widget.book.data['author'][FlutterI18n.translate(context, 'current_lang')] != "") 
+            ?  Padding(
+                    padding: const EdgeInsets.only(left: 20),
+                    child: RichText(text: TextSpan(
+                      children: [
+                        TextSpan(
+                          text: FlutterI18n.translate(context, 'noi_dung'),
+                           style: TextStyle(
+                          fontFamily: FlutterI18n.translate(context, 'font'),
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: const Color(0xFF202020)),
+                        ),
+                        TextSpan(
+                          text: widget.book.data['author'][FlutterI18n.translate(context, 'current_lang')],
+                           style: TextStyle(
+                          fontFamily: FlutterI18n.translate(context, 'font'),
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: const Color(0xFF202020)),
+                        ),
+                      ],
+                    ),),
+                  )
+                : const SizedBox.shrink(),
+                const SizedBox(
+              height: 10,
+            ),
+            (widget.book.data['painter'] != null && widget.book.data['painter'] != "") 
+            ?  Padding(
+                    padding: const EdgeInsets.only(left: 20),
+                    child: RichText(text: TextSpan(
+                      children: [
+                        TextSpan(
+                          text: FlutterI18n.translate(context, 'minh_hoa'),
+                           style: TextStyle(
+                          fontFamily: FlutterI18n.translate(context, 'font'),
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: const Color(0xFF202020)),
+                        ),
+                        TextSpan(
+                          text: widget.book.data['painter'],
+                           style: TextStyle(
+                          fontFamily: FlutterI18n.translate(context, 'font'),
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: const Color(0xFF202020)),
+                        ),
+                      ],
+                    ),),
+                  )
+                : const SizedBox.shrink(),
+                 const SizedBox(
+              height: 10,
+            ),
+          
+                (widget.book.publisher != null && widget.book.publisher != "") 
+            ?  Padding(
+                    padding: const EdgeInsets.only(left: 20),
+                    child: RichText(text: TextSpan(
+                      children: [
+                        TextSpan(
+                          text: FlutterI18n.translate(context, 'nha_xuat_ban'),
+                           style: TextStyle(
+                          fontFamily: FlutterI18n.translate(context, 'font'),
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: const Color(0xFF202020)),
+                        ),
+                        TextSpan(
+                          text: widget.book.publisher,
+                           style: TextStyle(
+                          fontFamily: FlutterI18n.translate(context, 'font'),
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: const Color(0xFF202020)),
+                        ),
+                      ],
+                    ),),
+                  )
+                : const SizedBox.shrink(),
             widget.listBook.isNotEmpty
                 ? Container(
                     margin: const EdgeInsets.only(top: 30),

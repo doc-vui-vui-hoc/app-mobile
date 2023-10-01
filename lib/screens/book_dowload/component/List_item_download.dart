@@ -48,8 +48,8 @@ class ItemBookDownLoad extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: const BorderRadius.all(Radius.circular(4)),
                 child: (book.data["image"].length != 0)
-                    ? Images.imageAssets(
-                        '$localPath${book.uuid}/${book.data["image"][0]["url"]}',
+                    ? Image.file(File(
+                        '$localPath${book.uuid}/${book.data["image"][0]["url"]}'),
                         width: 90,
                         height: 120,
                         fit: BoxFit.cover,
