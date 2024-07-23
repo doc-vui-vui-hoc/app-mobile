@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:ar_book/screens/book_detail/player_manager.dart';
 import 'package:ar_book/styles/images/images.dart';
 import 'package:flutter/material.dart';
@@ -39,20 +38,20 @@ class ItemPlayerDetail extends StatelessWidget {
             controller: ScrollController(keepScrollOffset: false),
             scrollDirection: Axis.vertical,
             child:
-            title != null 
+            title != null
             ? a.Html(
               data: title,
               style: {
-                "*": a.Style(
-                  textAlign: TextAlign.center,
-                  fontFamily: fontStyle,
-                  fontSize: a.FontSize(16),
-                  color: const Color(0xFF006338),
-                  fontWeight: FontWeight.bold,
-                ),
+                // "*": a.Style(
+                //   textAlign: TextAlign.center,
+                //   fontFamily: fontStyle,
+                //   fontSize: a.FontSize(16),
+                //   color: const Color(0xFF006338),
+                //   fontWeight: FontWeight.bold,
+                // ),
                 "span": a.Style(
                   textAlign: TextAlign.center,
-                  fontFamily: fontStyle,
+                   fontFamily: 'Nunito',
                   fontSize: a.FontSize(16),
                   color: const Color(0xFF006338),
                   fontWeight: FontWeight.bold,
@@ -62,6 +61,7 @@ class ItemPlayerDetail extends StatelessWidget {
                   fontSize: a.FontSize(16),
                   color: const Color(0xFF006338),
                   fontWeight: FontWeight.bold,
+                  fontFamily: fontStyle,
                 ),
               },
             )

@@ -3,7 +3,7 @@ import 'package:equatable/equatable.dart';
 class ArBook extends Equatable {
   final String uuid;
   final Map<String, dynamic> data;
-  final String publisher;
+  final String? publisher;
 
 
   const ArBook({required this.uuid, required this.data, required this.publisher});

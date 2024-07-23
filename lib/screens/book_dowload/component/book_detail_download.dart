@@ -213,7 +213,8 @@ class _BookDetailDownLoadState extends State<BookDetailDownLoad> {
                         TextSpan(
                           text: FlutterI18n.translate(context, 'minh_hoa'),
                            style: TextStyle(
-                          fontFamily: FlutterI18n.translate(context, 'font'),
+                          fontFamily:
+                                    FlutterI18n.translate(context, 'Nunito'),
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
                           color: const Color(0xFF202020)),
@@ -221,7 +222,8 @@ class _BookDetailDownLoadState extends State<BookDetailDownLoad> {
                         TextSpan(
                           text: widget.book.data['painter'],
                            style: TextStyle(
-                          fontFamily: FlutterI18n.translate(context, 'font'),
+                          fontFamily:
+                                    FlutterI18n.translate(context, 'Nunito'),
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
                           color: const Color(0xFF202020)),
@@ -276,22 +278,22 @@ class _BookDetailDownLoadState extends State<BookDetailDownLoad> {
               "") +
           "</p>",
       style: {
-         "*": Style(
-          textAlign: TextAlign.justify,
-          fontFamily: FlutterI18n.translate(context, 'font'),
-          fontSize: const FontSize(16),
-          color: const Color(0xFF707070),
-        ),
+        //  "*": Style(
+        //   textAlign: TextAlign.justify,
+        //   fontFamily: FlutterI18n.translate(context, 'font'),
+        //   fontSize: const FontSize(16),
+        //   color: const Color(0xFF707070),
+        // ),
         "span": Style(
           // textAlign: TextAlign.center,
           fontFamily: 'Nunito',
-          fontSize: const FontSize(16),
+          fontSize:  FontSize(16),
           color: const Color(0xFF707070),
         ),
         "p": Style(
           // textAlign: TextAlign.center,
           fontFamily: FlutterI18n.translate(context, 'font'),
-          fontSize: const FontSize(16),
+          fontSize:  FontSize(16),
           color: const Color(0xFF707070),
           // fontWeight: FontWeight.bold,
         ),

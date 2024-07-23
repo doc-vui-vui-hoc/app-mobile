@@ -2,6 +2,7 @@ import 'package:ar_book/common/button/vsp_touch.dart';
 import 'package:ar_book/styles/colors.dart';
 import 'package:ar_book/styles/images/images.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_i18n/flutter_i18n.dart';
 
 class CustomButtomWidget extends StatelessWidget {
   final String title;
@@ -63,6 +64,7 @@ class CustomButtomWidget extends StatelessWidget {
                     overflow: TextOverflow.ellipsis,
                     style: Theme.of(context).textTheme.bodyText2!.copyWith(
                           color: titleColor,
+                           fontFamily: FlutterI18n.translate(context, 'font'),
                         ),
                   ),
                 ],
@@ -73,6 +75,7 @@ class CustomButtomWidget extends StatelessWidget {
                 overflow: TextOverflow.ellipsis,
                 style: Theme.of(context).textTheme.bodyText2!.copyWith(
                       color: titleColor,
+                       fontFamily: FlutterI18n.translate(context, 'font'),
                     ),
               ),
       ),

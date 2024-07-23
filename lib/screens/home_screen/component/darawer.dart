@@ -1,6 +1,4 @@
 import 'package:ar_book/screens/home_screen/component/draw/language.dart';
-import 'package:ar_book/screens/home_screen/component/draw/security_screen.dart';
-import 'package:ar_book/screens/home_screen/component/draw/terms_of_use.dart';
 import 'package:ar_book/styles/colors.dart';
 import 'package:ar_book/styles/custom_size.dart';
 import 'package:ar_book/styles/images/images.dart';
@@ -9,14 +7,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_i18n/flutter_i18n.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class NavigationDrawer extends ConsumerStatefulWidget {
-  const NavigationDrawer({Key? key}) : super(key: key);
+class NavigationDrawerWidget extends ConsumerStatefulWidget {
+  const NavigationDrawerWidget({Key? key}) : super(key: key);
 
   @override
-  ConsumerState<NavigationDrawer> createState() => _NavigationDrawerState();
+  ConsumerState<NavigationDrawerWidget> createState() => _NavigationDrawerWidgetState();
 }
 
-class _NavigationDrawerState extends ConsumerState<NavigationDrawer> {
+class _NavigationDrawerWidgetState extends ConsumerState<NavigationDrawerWidget> {
   @override
   void initState() {
     super.initState();
@@ -35,9 +33,6 @@ class _NavigationDrawerState extends ConsumerState<NavigationDrawer> {
             SizedBox(
               height: getHeight(context) * 0.2,
               child: DrawerHeader(
-                // decoration: BoxDecoration(
-                //   // color: CustomColors.green006338.withOpacity(0.1),
-                // ),
                 child: Center(
                   child: Images.imageAssets(
                     Images.img_logo,
@@ -119,6 +114,7 @@ class _NavigationDrawerState extends ConsumerState<NavigationDrawer> {
                 leading: Text(
                   FlutterI18n.translate(context, 'user.language'),
                   style: TxtStyle.Noto18w600.copyWith(
+                    fontFamily: FlutterI18n.translate(context, "font"),
                     color: CustomColors.green006338,
                   ),
                 ),

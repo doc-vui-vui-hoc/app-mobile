@@ -54,7 +54,7 @@ class _MyAppState extends ConsumerState<MyApp> {
     Locale.fromSubtags(languageCode: 'vi', scriptCode: 'Jrai'),
     Locale.fromSubtags(languageCode: 'vi', scriptCode: 'Mong'),
     Locale.fromSubtags(languageCode: 'vi', scriptCode: 'Mnong'),
-    Locale.fromSubtags(languageCode: 'vi', scriptCode: 'Ede'),
+    Locale.fromSubtags(languageCode: 'vi', scriptCode: 'EDE'),
     Locale.fromSubtags(languageCode: 'vi', scriptCode: 'Bahnar'),
   ];
 
@@ -62,6 +62,7 @@ class _MyAppState extends ConsumerState<MyApp> {
     debugPrint("LOCALE $locale");
     setState(() {
       _locale = locale;
+      print(locale);
     });
   }
 
@@ -147,8 +148,6 @@ class _MyAppState extends ConsumerState<MyApp> {
           ),
           primaryColor: Colors.white,
           colorScheme: const ColorScheme(
-            primaryVariant: Colors.white,
-            secondaryVariant: Color(0xFFFBEFEB),
             primary: Colors.white,
             onPrimary: Colors.white,
             background: Colors.white,

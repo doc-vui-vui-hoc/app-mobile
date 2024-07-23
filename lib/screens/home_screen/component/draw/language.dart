@@ -78,7 +78,9 @@ class _SelectLanguagesState extends State<SelectLanguages> {
                     activeColor: Colors.blue,
                     title: Text(
                       lang[index].name,
-                      style: TextStyle(fontFamily: lang[index].font),
+                      style: TextStyle(fontFamily: lang[index].font).copyWith(
+                        // fontFamily: FlutterI18n.translate(context, 'font'),
+                      ),
                     ),
                     contentPadding:
                         const EdgeInsets.symmetric(vertical: 0, horizontal: 20),
@@ -89,18 +91,22 @@ class _SelectLanguagesState extends State<SelectLanguages> {
                       setState(() {
                         currentLang = value!;
                       });
-                      late Locale locale;
+                      // late Locale locale;
                       if (lang[currentLang].scriptCode != '') {
-                        locale = Locale.fromSubtags(
+                         MyApp.setLocale(context, Locale.fromSubtags(
                             languageCode: lang[currentLang].languageCode,
-                            scriptCode: lang[currentLang].scriptCode);
+                            scriptCode: lang[currentLang].scriptCode));
+                        FlutterI18n.refresh(context, Locale.fromSubtags(
+                            languageCode: lang[currentLang].languageCode,
+                            scriptCode: lang[currentLang].scriptCode));
                       } else {
-                        locale = Locale(lang[currentLang].languageCode);
+                        MyApp.setLocale(context, Locale(lang[currentLang].languageCode));
+                        FlutterI18n.refresh(context, Locale(lang[currentLang].languageCode));
                       }
-                      MyApp.setLocale(context, locale);
-                      FlutterI18n.refresh(context, locale);
+                      // MyApp.setLocale(context, locale);
+                      // FlutterI18n.refresh(context, locale);
                       setPrefsLang();
-
+                      print(lang[currentLang].id);
                       Navigator.pop(context);
                     },
                   );

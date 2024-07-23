@@ -13,7 +13,8 @@ class ItemBook extends StatelessWidget {
       {Key? key,
       required this.book,
       required this.listBook,
-      this.related = true})
+      this.related = true,
+      })
       : super(key: key);
 
   @override
